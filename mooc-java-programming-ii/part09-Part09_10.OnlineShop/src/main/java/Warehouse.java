@@ -36,8 +36,7 @@ public class Warehouse {
 	}
 
 	public Set<String> products() {
-		Set<String> products = productPriceList.keySet();
-		return products;
+		return this.productPriceList.keySet();
 	}
 
 }

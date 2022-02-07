@@ -26,6 +26,7 @@ public class Store {
 			if (product.isEmpty()) {
 				break;
 			}
+			//Add to cart product from warehouse inputed by user. Also updating stock inputed by user.
 			if (warehouse.stock(product) != 0) {
 				cart.add(product, warehouse.price(product));
 				warehouse.take(product);

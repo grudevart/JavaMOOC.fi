@@ -19,17 +19,11 @@ public class Warehouse {
 	}
 
 	public int price(String product) {
-		if (productPriceList.isEmpty() || !productPriceList.containsKey(product)) {
-			return -99;
-		}
-		return productPriceList.get(product);
+		return this.productPriceList.getOrDefault(product, -99);
 	}
 
 	public int stock(String product) {
-		if (productStockList.isEmpty() || !productStockList.containsKey(product)) {
-			return 0;
-		}
-		return productStockList.get(product);
+		return this.productStockList.getOrDefault(product, 0);
 	}
 
 	public boolean take(String product) {
@@ -37,8 +31,7 @@ public class Warehouse {
 		if (stock == 0) {
 			return false;
 		}
-		stock--;
-		productStockList.put(product, stock);
+		productStockList.put(product, stock-1);
 		return true;
 	}
 

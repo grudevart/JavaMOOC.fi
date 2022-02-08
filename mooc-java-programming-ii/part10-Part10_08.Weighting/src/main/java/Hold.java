@@ -23,7 +23,7 @@ public class Hold {
     public int totalWeight() {
     	return this.suitcases.stream().mapToInt(suitcase -> suitcase.totalWeight()).sum();
     }
-
+ 
     public void printItems() {
     	this.suitcases.stream().forEach(item -> item.printItems());
     }

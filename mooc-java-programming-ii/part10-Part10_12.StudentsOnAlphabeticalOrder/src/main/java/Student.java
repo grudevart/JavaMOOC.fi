@@ -1,6 +1,6 @@
 
 
-public class Student {
+public class Student  implements Comparable<Student>{
 
     private String name;
 
@@ -16,5 +16,10 @@ public class Student {
     public String toString() {
         return name;
     }
+
+	@Override
+	public int compareTo(Student o) {
+		return this.getName().compareToIgnoreCase(o.getName());
+	}
 
 }

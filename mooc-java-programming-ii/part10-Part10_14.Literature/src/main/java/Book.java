@@ -17,4 +17,7 @@ public class Book {
 		return ageRecommmendation;
 	}
 
+	public String toString() {
+		return this.getName() +" (recommended for " + this.getAgeRecommmendation() + " year-olds or older)";
+	}
 }

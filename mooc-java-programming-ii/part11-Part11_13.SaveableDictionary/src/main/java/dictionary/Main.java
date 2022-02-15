@@ -16,7 +16,7 @@ public class Main {
       	System.out.println(dictionary.translate("apina"));
       	System.out.println(dictionary.translate("ohjelmointi"));
       	System.out.println(dictionary.translate("alla oleva"));
-
+      	dictionary.add("artur", "madzia");
       	dictionary.save();
 
     }

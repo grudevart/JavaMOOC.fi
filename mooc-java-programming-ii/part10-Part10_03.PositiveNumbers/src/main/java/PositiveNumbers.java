@@ -14,6 +14,7 @@ public class PositiveNumbers {
 		list.add(4);
 		list.add(-2);
 		list.add(6);
+		list.add(9);
 
 		System.out.println(positive(list));
 
